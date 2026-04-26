@@ -11,27 +11,66 @@
     "headshot": "assets/images/profile-placeholder.svg"
   },
   "highlights": [
-    { "label": "Research focus", "value": "CFD, FEA, FSI" },
-    { "label": "Programming", "value": "Python, MATLAB, Julia" },
-    { "label": "Simulation tools", "value": "STAR-CCM+, SolidWorks, FreeCAD" },
-    { "label": "Prior design experience", "value": "4 years" }
+    {
+      "label": "Research focus",
+      "value": "CFD, FEA, FSI"
+    },
+    {
+      "label": "Programming",
+      "value": "Python, MATLAB, Julia"
+    },
+    {
+      "label": "Simulation tools",
+      "value": "STAR-CCM+, SolidWorks, FreeCAD"
+    },
+    {
+      "label": "Prior design experience",
+      "value": "4 years"
+    }
   ],
   "skills": [
     {
       "group": "Simulation and CAD",
-      "items": ["STAR-CCM+", "SolidWorks", "FreeCAD", "XFLR5", "High-performance computing"]
+      "items": [
+        "STAR-CCM+",
+        "SolidWorks",
+        "FreeCAD",
+        "XFLR5",
+        "High-performance computing"
+      ]
     },
     {
       "group": "Programming",
-      "items": ["Python", "MATLAB", "Julia", "Numerical methods", "Data visualization"]
+      "items": [
+        "Python",
+        "MATLAB",
+        "Julia",
+        "Numerical methods",
+        "Data visualization"
+      ]
     },
     {
       "group": "Methods",
-      "items": ["CFD", "FEA", "FSI", "LBM", "RANS", "LES", "VOF", "PID control"]
+      "items": [
+        "CFD",
+        "FEA",
+        "FSI",
+        "LBM",
+        "RANS",
+        "LES",
+        "VOF",
+        "PID control"
+      ]
     },
     {
       "group": "Core engineering",
-      "items": ["Fluid mechanics", "Thermodynamics", "Heat transfer", "Stress analysis", "Aerodynamics"]
+      "items": [
+        "Fluid mechanics",
+        "Thermodynamics",
+        "Heat transfer",
+        "Stress analysis",
+        "Aerodynamics"
+      ]
     }
   ],
   "projects": [
@@ -39,10 +78,19 @@
       "id": "nutrient-transport",
       "title": "Nutrient Transport in Trabecular Bone",
       "subtitle": "CFD model for convection-diffusion behavior in porous biological flow",
-      "category": ["CFD", "Biofluids", "Research"],
+      "category": [
+        "CFD",
+        "Biofluids",
+        "Research"
+      ],
       "status": "Research project",
-      "image": "assets/images/projects/nutrient-transport-cfd.svg",
-      "tools": ["STAR-CCM+", "CFD", "Porous flow", "Convection-diffusion"],
+      "image": "assets/images/projects/nutrient-transport/thumbnail.svg",
+      "tools": [
+        "STAR-CCM+",
+        "CFD",
+        "Porous flow",
+        "Convection-diffusion"
+      ],
       "summary": "Developing CFD-based models to describe nutrient transport behavior in interstitial fluid through porous bone-like geometries.",
       "details": [
         "Formulated simulation workflows for convection-diffusion behavior of nutrients in porous flows.",
@@ -50,18 +98,33 @@
         "Designed the project as a bridge between bio-fluid mechanics, transport phenomena, and computational modeling."
       ],
       "links": [
-        { "label": "Add thesis link", "url": "#" },
-        { "label": "Add project report", "url": "#" }
+        {
+          "label": "Add thesis link",
+          "url": "#"
+        },
+        {
+          "label": "Add project report",
+          "url": "#"
+        }
       ]
     },
     {
       "id": "droplet-dynamics",
       "title": "Levitating Droplet in a Vertical Wind Tunnel",
       "subtitle": "Multiphase VOF simulation with coaxial jets and turbulent field variation",
-      "category": ["CFD", "Multiphase", "Research"],
+      "category": [
+        "CFD",
+        "Multiphase",
+        "Research"
+      ],
       "status": "Research project",
-      "image": "assets/images/projects/droplet-coaxial-jet.svg",
-      "tools": ["STAR-CCM+", "VOF", "Coaxial jets", "Turbulence"],
+      "image": "assets/images/projects/droplet-dynamics/thumbnail.svg",
+      "tools": [
+        "STAR-CCM+",
+        "VOF",
+        "Coaxial jets",
+        "Turbulence"
+      ],
       "summary": "Simulating a liquid droplet in a vertical wind tunnel with coaxial jets to study droplet stability and dynamics in a controlled turbulent field.",
       "details": [
         "Built multiphase VOF models of a droplet interacting with a coaxial jet flow field.",
@@ -69,18 +132,33 @@
         "Prepared the workflow for future force tracking, particle history, and droplet control studies."
       ],
       "links": [
-        { "label": "Add animation", "url": "#" },
-        { "label": "Add poster", "url": "#" }
+        {
+          "label": "Add animation",
+          "url": "#"
+        },
+        {
+          "label": "Add poster",
+          "url": "#"
+        }
       ]
     },
     {
       "id": "rans-les-coaxial",
       "title": "RANS and LES Coaxial Jet Modeling",
       "subtitle": "Comparing turbulence models for near-exit coaxial jet behavior",
-      "category": ["CFD", "Turbulence", "Research"],
+      "category": [
+        "CFD",
+        "Turbulence",
+        "Research"
+      ],
       "status": "Simulation workflow",
-      "image": "assets/images/projects/wind-tunnel-rans-les.svg",
-      "tools": ["RANS", "LES", "STAR-CCM+", "HPC"],
+      "image": "assets/images/projects/rans-les-coaxial/thumbnail.svg",
+      "tools": [
+        "RANS",
+        "LES",
+        "STAR-CCM+",
+        "HPC"
+      ],
       "summary": "Implemented RANS and LES turbulence models to analyze the near-exit flow field of coaxial jets used in droplet levitation simulations.",
       "details": [
         "Compared modeling approaches for resolving turbulent structures and practical design-level behavior.",
@@ -88,17 +166,30 @@
         "Connected turbulence model selection to droplet stability and flow field prediction."
       ],
       "links": [
-        { "label": "Add simulation images", "url": "#" }
+        {
+          "label": "Add simulation images",
+          "url": "#"
+        }
       ]
     },
     {
       "id": "fsi-bone-stress",
       "title": "Fluid-Structure Interaction in Bone Mechanics",
       "subtitle": "Bone stress response and transport behavior under mechanical loading",
-      "category": ["FSI", "FEA", "Biofluids", "Research"],
+      "category": [
+        "FSI",
+        "FEA",
+        "Biofluids",
+        "Research"
+      ],
       "status": "Research project",
-      "image": "assets/images/projects/fsi-bone-stress.svg",
-      "tools": ["FSI", "FEA", "STAR-CCM+", "Stress analysis"],
+      "image": "assets/images/projects/fsi-bone-stress/thumbnail.svg",
+      "tools": [
+        "FSI",
+        "FEA",
+        "STAR-CCM+",
+        "Stress analysis"
+      ],
       "summary": "Studying how fluid motion and structural stresses interact in bone-like systems, with relevance to osteoporosis under Earth and microgravity conditions.",
       "details": [
         "Combined fluid mechanics and structural analysis ideas to study bone stress behavior.",
@@ -106,18 +197,33 @@
         "Built the project around the connection between biomechanics, CFD, and FEA."
       ],
       "links": [
-        { "label": "Add thesis link", "url": "#" },
-        { "label": "Add publication", "url": "#" }
+        {
+          "label": "Add thesis link",
+          "url": "#"
+        },
+        {
+          "label": "Add publication",
+          "url": "#"
+        }
       ]
     },
     {
       "id": "pid-cfd-control",
       "title": "PID Control in CFD Models",
       "subtitle": "Closed-loop control for inlet velocity regulation in simulation workflows",
-      "category": ["CFD", "Control", "Coding"],
+      "category": [
+        "CFD",
+        "Control",
+        "Coding"
+      ],
       "status": "Method development",
-      "image": "assets/images/projects/pid-cfd-control.svg",
-      "tools": ["PID control", "STAR-CCM+ macro", "Java", "Automation"],
+      "image": "assets/images/projects/pid-cfd-control/thumbnail.svg",
+      "tools": [
+        "PID control",
+        "STAR-CCM+ macro",
+        "Java",
+        "Automation"
+      ],
       "summary": "Implemented proportional-integral-derivative control logic in CFD models to regulate simulation parameters and stabilize target flow behavior.",
       "details": [
         "Developed control logic for adapting inlet conditions during simulation runs.",
@@ -125,17 +231,29 @@
         "Built around practical research automation and repeatable simulation studies."
       ],
       "links": [
-        { "label": "Add code repository", "url": "#" }
+        {
+          "label": "Add code repository",
+          "url": "#"
+        }
       ]
     },
     {
       "id": "potential-flow-solver",
       "title": "Potential Flow Solver Development",
       "subtitle": "Thin airfoil theory and source panel method in Python",
-      "category": ["Coding", "Aerodynamics", "Class project"],
+      "category": [
+        "Coding",
+        "Aerodynamics",
+        "Class project"
+      ],
       "status": "Class project",
-      "image": "assets/images/projects/potential-flow-solver.svg",
-      "tools": ["Python", "XFLR5", "Thin airfoil theory", "Source panel method"],
+      "image": "assets/images/projects/potential-flow-solver/thumbnail.svg",
+      "tools": [
+        "Python",
+        "XFLR5",
+        "Thin airfoil theory",
+        "Source panel method"
+      ],
       "summary": "Developed Python-based potential flow solvers and compared predicted aerodynamic behavior against XFLR5 results.",
       "details": [
         "Implemented thin airfoil theory and source panel method concepts in Python.",
@@ -143,17 +261,29 @@
         "Strengthened understanding of computational aerodynamics from first principles."
       ],
       "links": [
-        { "label": "Add GitHub code", "url": "#" }
+        {
+          "label": "Add GitHub code",
+          "url": "#"
+        }
       ]
     },
     {
       "id": "plate-heat-transfer",
       "title": "2-D Plate Heat Transfer Solver",
       "subtitle": "Finite difference heat transfer model with multiple boundary conditions",
-      "category": ["Coding", "Heat transfer", "Class project"],
+      "category": [
+        "Coding",
+        "Heat transfer",
+        "Class project"
+      ],
       "status": "Class project",
-      "image": "assets/images/projects/plate-heat-transfer.svg",
-      "tools": ["Python", "FDM", "Heat transfer", "Numerical methods"],
+      "image": "assets/images/projects/plate-heat-transfer/thumbnail.svg",
+      "tools": [
+        "Python",
+        "FDM",
+        "Heat transfer",
+        "Numerical methods"
+      ],
       "summary": "Created a finite-difference solver for 2-D heat transfer on a plate with different boundary condition configurations.",
       "details": [
         "Solved heat conduction behavior using finite difference discretization.",
@@ -161,35 +291,59 @@
         "Connected numerical linear algebra with thermal analysis."
       ],
       "links": [
-        { "label": "Add code repository", "url": "#" }
+        {
+          "label": "Add code repository",
+          "url": "#"
+        }
       ]
     },
     {
       "id": "heat-flux-sensor",
       "title": "Heat Flux Sensor Build",
       "subtitle": "Experimental sensor assembly for high-temperature heat flux measurement",
-      "category": ["Experimental", "Heat transfer", "Class project"],
+      "category": [
+        "Experimental",
+        "Heat transfer",
+        "Class project"
+      ],
       "status": "Class project",
-      "image": "assets/images/projects/heat-flux-sensor.svg",
-      "tools": ["Thermostats", "Aluminum cube", "Heat flux", "Experiment"],
-      "summary": "Built a heat flux sensor using thermostats on a six-millimeter aluminum cube to measure heat fluxes up to 350 °C.",
+      "image": "assets/images/projects/heat-flux-sensor/thumbnail.svg",
+      "tools": [
+        "Thermostats",
+        "Aluminum cube",
+        "Heat flux",
+        "Experiment"
+      ],
+      "summary": "Built a heat flux sensor using thermostats on a six-millimeter aluminum cube to measure heat fluxes up to 350 \u00b0C.",
       "details": [
         "Assembled and tested an experimental heat flux measurement setup.",
         "Connected thermal gradients and material response to heat flux estimation.",
         "Gained hands-on experience in sensor building and thermal experimentation."
       ],
       "links": [
-        { "label": "Add lab report", "url": "#" }
+        {
+          "label": "Add lab report",
+          "url": "#"
+        }
       ]
     },
     {
       "id": "industrial-structures",
       "title": "Industrial Structural Design and FEA",
       "subtitle": "Power plant and heavy machinery structural analysis",
-      "category": ["FEA", "Structures", "Industry"],
+      "category": [
+        "FEA",
+        "Structures",
+        "Industry"
+      ],
       "status": "Professional experience",
-      "image": "assets/images/projects/structural-fea-industrial.svg",
-      "tools": ["FEA", "Structural design", "Load calculation", "Technical reports"],
+      "image": "assets/images/projects/structural-fea-industrial/thumbnail.svg",
+      "tools": [
+        "FEA",
+        "Structural design",
+        "Load calculation",
+        "Technical reports"
+      ],
       "summary": "Performed static and dynamic load calculations, stress analysis, and industrial structural design for power plant and heavy machinery projects.",
       "details": [
         "Worked on thermal, wind, seismic, and machinery load calculations.",
@@ -197,7 +351,10 @@
         "Collaborated with multinational engineering teams on projects in Asia and North America."
       ],
       "links": [
-        { "label": "Add project images", "url": "#" }
+        {
+          "label": "Add project images",
+          "url": "#"
+        }
       ]
     }
   ],
@@ -280,6 +437,16 @@
     }
   ],
   "coursework": [
-    "Fluid Mechanics", "Viscous Flows", "Incompressible Aerodynamics", "Hydraulics", "Heat Transfer", "Thermodynamics", "Boundary Value Problems", "Numerical Methods", "Computational Fluid Dynamics", "Numerical Linear Algebra", "Finite Element Analysis"
+    "Fluid Mechanics",
+    "Viscous Flows",
+    "Incompressible Aerodynamics",
+    "Hydraulics",
+    "Heat Transfer",
+    "Thermodynamics",
+    "Boundary Value Problems",
+    "Numerical Methods",
+    "Computational Fluid Dynamics",
+    "Numerical Linear Algebra",
+    "Finite Element Analysis"
   ]
 }
