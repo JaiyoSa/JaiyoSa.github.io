@@ -219,13 +219,58 @@ function renderProjects(projects = []) {
   update();
 }
 
+function renderMediaGallery(project) {
+  let mediaHTML = '';
+  
+  // If project has media array, render gallery
+  if (project.media && project.media.length > 0) {
+    mediaHTML = '<div class="media-gallery">';
+    project.media.forEach(item => {
+      if (item.type === 'image') {
+        mediaHTML += `
+          <div class="media-item">
+            <img src="${item.url}" alt="${escapeHTML(item.label)}" />
+            <p class="media-label">${escapeHTML(item.label)}</p>
+          </div>
+        `;
+      } else if (item.type === 'video') {
+        mediaHTML += `
+          <div class="media-item">
+            <video controls style="width:100%;border-radius:6px;">
+              <source src="${item.url}" type="video/mp4">
+              Your browser does not support video.
+            </video>
+            <p class="media-label">${escapeHTML(item.label)}</p>
+          </div>
+        `;
+      } else if (item.type === 'pdf') {
+        mediaHTML += `
+          <div class="media-item media-pdf">
+            <a href="${item.url}" target="_blank" rel="noreferrer" class="pdf-link">
+              <div class="pdf-icon">📄</div>
+              <p>${escapeHTML(item.label)}</p>
+              <small>Click to open PDF</small>
+            </a>
+          </div>
+        `;
+      }
+    });
+    mediaHTML += '</div>';
+  } else if (project.image) {
+    // Fallback to single image if no media array
+    mediaHTML = `<img src="${project.image}" alt="${escapeHTML(project.title)}">`;
+  }
+  
+  return mediaHTML;
+}
+
 function openProject(project) {
   const dialog = $('#projectModal');
   const content = $('#modalContent');
   if (!project || !dialog || !content) return;
   content.innerHTML = `
     <div class="modal-layout">
-      <img src="${project.image}" alt="${escapeHTML(project.title)}">
+      ${renderMediaGallery(project)}
       <div class="modal-text">
         <p class="modal-eyebrow">${escapeHTML(project.status)}</p>
         <h2>${escapeHTML(project.title)}</h2>
