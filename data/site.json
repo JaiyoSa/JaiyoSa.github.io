@@ -365,8 +365,12 @@
       "location": "Daytona Beach, FL",
       "period": "Aug 2024 - Present",
       "points": [
-        "Research in CFD, multiphase flow, nutrient transport, turbulence modeling, and FSI.",
-        "Simulation workflows using STAR-CCM+, RANS, LES, VOF, PID control, and HPC."
+        "Formulation of an empirical relation to describe convection-diffusion behavior of nutrients in porous flows in interstitial fluid using CFD analysis with STAR-CCM+.",
+        "Simulation of a multiphase (VOF) model of a drop in a vertical wind tunnel with coaxial jets to study the drop dynamics in a varying turbulent field.",
+        "Implementation of RANS and LES turbulence models in the coaxial jet flow field simulation models.",
+        "Implementation of proportional-integrative-derivative (PID) control method in CFD models.",
+        "Fluid-structure analysis to study the bone stresses and their impact on osteoporosis in earth and microgravity.",
+        "Utilizing high-performance computing (HPC) and parallel processing to run the simulations more efficiently."
       ]
     },
     {
@@ -375,18 +379,21 @@
       "location": "Daytona Beach, FL",
       "period": "Aug 2024 - May 2025",
       "points": [
-        "Supported experimental aerodynamics labs for compressible and incompressible flows.",
-        "Assisted students with wind tunnel data collection, uncertainty analysis, and course concepts."
+        "Taught undergraduate students to set up an experimental model and collect data in a wind tunnel as part of the experimental aerodynamics lab (compressible and incompressible flows), followed by data analysis and uncertainty analysis.",
+        "Held office hours for the undergraduate senior level incompressible and compressible flow course, along with grading."
       ]
     },
     {
-      "role": "Design Engineer",
+      "role": "Civil/Structural Design Engineer",
       "organization": "Asha Consulting Group Pvt. Ltd.",
       "location": "Nepal",
       "period": "Feb 2020 - Jan 2024",
       "points": [
-        "Worked on industrial structures, power plant components, stress analysis, design checks, drawings, quantity estimation, and technical reporting.",
-        "Representative projects included Hin-Kong Power Plant, Sakkaide Biomass Power Plant, Carbon Capture FEED projects, and industrial plant structures."
+        "Static and dynamic load calculations (thermal, wind, seismic) of heavy machinery structures.",
+        "Stress analysis and structural design of industrial structures and power plants, including pipe racks, silo tanks, cable racks, heavy machinery buildings, etc., using FEA.",
+        "Collaborated with multinational engineering teams like Mitsubishi Heavy Industries (MHI).",
+        "Representative projects included Hin-Kong Power Plant, Sakkaide Biomass Power Plant, Carbon Capture FEED projects, and industrial plant structures.",
+        "Major responsibilities: Structural analysis, design, load calculation, drawings, quantity estimation, site supervision, quality control, technical presentation, and report writing."
       ]
     }
   ],
@@ -401,7 +408,7 @@
       "degree": "Master of Science in Aerospace Engineering",
       "school": "Embry-Riddle Aeronautical University",
       "period": "Aug 2024 - Dec 2025",
-      "note": "Graduate coursework and research in computational and thermal-fluid sciences."
+      "note": "Graduate coursework and research in computational, bio-fluid and thermal-fluid sciences."
     },
     {
       "degree": "Bachelor of Science in Civil Engineering",
