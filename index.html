@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sagar Gharti – Aerospace Engineering PhD Candidate at ERAU. CFD, FEA, FSI, multiphase flow, bio-fluid mechanics." />
+  <title>Sagar Gharti | Aerospace Engineering</title>
+  <link rel="icon" href="assets/images/profile-placeholder.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+
+  <div class="progress-bar" id="progressBar"></div>
+  <canvas class="flow-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="Go to home">
+      <span class="brand-mark">SG</span>
+    </a>
+    <nav class="nav" id="navMenu" aria-label="Main navigation">
+      <a href="#about" class="nav-link"><span class="nav-num">01</span>About</a>
+      <a href="#projects" class="nav-link"><span class="nav-num">02</span>Projects</a>
+      <a href="#research" class="nav-link"><span class="nav-num">03</span>Research</a>
+      <a href="#publications" class="nav-link"><span class="nav-num">04</span>Publications</a>
+      <a href="blog.html" class="nav-link"><span class="nav-num">05</span>Blog</a>
+      <a href="#contact" class="nav-link"><span class="nav-num">06</span>Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="cmd-btn" id="commandOpen" aria-label="Open command palette">⌘K</button>
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+      <button class="menu-button" id="menuButton" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero section-pad">
+      <div class="hero-content reveal">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span class="mono" id="heroEyebrow">Aerospace Engineering · CFD · FEA · FSI</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="name-line" id="personName">Sagar Gharti</span>
+          <span class="role-line"><span class="gradient-text" id="typingText"></span><span class="cursor-blink">|</span></span>
+        </h1>
+        <p class="hero-lede" id="personSummary"></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore projects →</a>
+          <a class="btn btn-ghost" id="cvLink" href="assets/cv/Sagar-Gharti-CV.pdf" target="_blank" rel="noreferrer">↓ Download CV</a>
+          <a class="btn btn-outline" href="blog.html">Blog</a>
+        </div>
+      </div>
+
+      <aside class="hero-card reveal" aria-label="Profile preview">
+        <div class="card-corner card-corner-tl"></div>
+        <div class="card-corner card-corner-br"></div>
+        <div class="profile-img-frame">
+          <img id="headshot" src="assets/images/profile-placeholder.svg" alt="Sagar Gharti" />
+        </div>
+        <div class="profile-body">
+          <p class="profile-status"><span class="status-dot"></span>Open to research &amp; simulation roles</p>
+          <h2 class="profile-name">PhD Candidate</h2>
+          <p class="profile-school">Embry-Riddle Aeronautical University</p>
+          <div class="profile-divider"></div>
+          <div class="profile-links">
+            <a class="profile-link" id="linkedinLink" href="https://www.linkedin.com/in/sgharti3/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a class="profile-link" id="emailLink2" href="mailto:ghartis@my.erau.edu">Email ↗</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="stats-strip reveal" id="highlights" aria-label="Key highlights"></section>
+
+    <section class="section section-pad" id="about">
+      <div class="section-label reveal"><span class="section-num">01</span><span>About</span></div>
+      <div class="section-heading reveal">
+        <h2>Engineering problems,<br>modeled from physics first.</h2>
+        <p>I use simulation, numerical methods, and experimental thinking to study transport, turbulence, multiphase flow, and structural response.</p>
+      </div>
+      <div class="about-grid">
+        <article class="glass-card reveal">
+          <div class="card-corner card-corner-tl"></div>
+          <h3>What I work on</h3>
+          <p id="aboutSummary"></p>
+          <div class="course-tags" id="coursework"></div>
+        </article>
+        <article class="glass-card reveal">
+          <div class="card-corner card-corner-tl"></div>
+          <h3>Core skills</h3>
+          <div class="skill-groups" id="skills"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-pad section-alt" id="projects">
+      <div class="section-label reveal"><span class="section-num">02</span><span>Projects</span></div>
+      <div class="section-heading reveal">
+        <h2>Interactive project gallery</h2>
+        <p>Each card shows a placeholder image. Replace SVG files with simulation snapshots, plots, or lab photos.</p>
+      </div>
+      <div class="toolbar reveal">
+        <label class="search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input id="projectSearch" type="search" placeholder="Search: CFD, droplet, heat transfer…" />
+        </label>
+        <div class="filter-chips" id="projectFilters"></div>
+      </div>
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="section section-pad" id="research">
+      <div class="section-label reveal"><span class="section-num">03</span><span>Research</span></div>
+      <div class="section-heading reveal">
+        <h2>How my work connects</h2>
+        <p>Click a node to filter the project gallery by research area.</p>
+      </div>
+      <div class="research-map reveal" id="researchMap">
+        <button class="research-node" data-tag="Biofluids"><span class="node-icon">◈</span><span>Bio-fluid mechanics</span></button>
+        <button class="research-node" data-tag="CFD"><span class="node-icon">◈</span><span>CFD modeling</span></button>
+        <button class="research-node" data-tag="Multiphase"><span class="node-icon">◈</span><span>Multiphase flow</span></button>
+        <button class="research-node" data-tag="FSI"><span class="node-icon">◈</span><span>FSI &amp; bone mechanics</span></button>
+        <button class="research-node" data-tag="Turbulence"><span class="node-icon">◈</span><span>Turbulence modeling</span></button>
+        <button class="research-node" data-tag="Coding"><span class="node-icon">◈</span><span>Scientific computing</span></button>
+      </div>
+    </section>
+
+    <section class="section section-pad section-alt" id="timeline">
+      <div class="section-label reveal"><span class="section-num">04</span><span>Experience</span></div>
+      <div class="section-heading reveal">
+        <h2>Research, teaching, and engineering design</h2>
+      </div>
+      <div class="timeline" id="experienceTimeline"></div>
+    </section>
+
+    <section class="section section-pad" id="education">
+      <div class="section-label reveal"><span class="section-num">05</span><span>Education</span></div>
+      <div class="section-heading reveal">
+        <h2>Academic background</h2>
+      </div>
+      <div class="edu-grid" id="educationGrid"></div>
+    </section>
+
+    <section class="section section-pad section-alt" id="publications">
+      <div class="section-label reveal"><span class="section-num">06</span><span>Publications</span></div>
+      <div class="section-heading reveal">
+        <h2>Thesis &amp; publications</h2>
+        <p>Add thesis links, journal papers, conference posters, datasets, or GitHub repositories here.</p>
+      </div>
+      <div class="publication-list" id="publicationList"></div>
+    </section>
+
+    <section class="section section-pad" id="blog-preview">
+      <div class="section-label reveal"><span class="section-num">07</span><span>Blog</span></div>
+      <div class="section-heading reveal">
+        <h2>Research notes &amp; writing</h2>
+        <p>The blog is updateable using plain Markdown files. No HTML needed for normal posts.</p>
+      </div>
+      <div class="blog-grid" id="blogPreview"></div>
+      <div class="center reveal" style="margin-top:2rem;">
+        <a class="btn btn-outline" href="blog.html">Open full blog →</a>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="contact">
+      <div class="contact-card reveal">
+        <div class="card-corner card-corner-tl"></div>
+        <div class="card-corner card-corner-br"></div>
+        <div class="contact-inner">
+          <div class="section-label" style="margin-bottom:1.5rem;"><span class="section-num">08</span><span>Contact</span></div>
+          <h2>Let's connect about CFD,<br>aerospace, or research.</h2>
+          <p>Email is the best way to reach me. You can also connect through LinkedIn.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" id="emailLink" href="mailto:ghartis@my.erau.edu">Email me</a>
+            <a class="btn btn-outline" id="linkedinLink2" href="https://www.linkedin.com/in/sgharti3/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <button class="btn btn-ghost" id="copyEmail">Copy email</button>
+          </div>
+        </div>
+        <div class="contact-deco" aria-hidden="true"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy mono">© <span id="year"></span> Sagar Gharti</p>
+      <p class="footer-sub">Aerospace Engineering PhD Candidate · Embry-Riddle Aeronautical University</p>
+      <a class="back-top" href="#top">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <dialog class="project-modal" id="projectModal">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <div id="modalContent"></div>
+  </dialog>
+
+  <div class="command-palette" id="commandPalette" aria-hidden="true">
+    <div class="command-box">
+      <div class="command-head">
+        <span class="mono">Quick navigation</span>
+        <button id="commandClose" aria-label="Close">ESC</button>
+      </div>
+      <input id="commandSearch" type="search" placeholder="Type: projects, blog, contact, CV…" autocomplete="off" />
+      <div class="command-results" id="commandResults"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

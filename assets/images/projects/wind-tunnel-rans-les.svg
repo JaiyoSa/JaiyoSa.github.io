@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Coaxial Jet Flow">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#16213f"/></linearGradient>
+    <radialGradient id="r" cx="0.7" cy="0.25" r="0.8"><stop offset="0" stop-color="#ffcb6b" stop-opacity="0.35"/><stop offset="1" stop-color="#ffcb6b" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="600" rx="34" fill="url(#g)"/>
+  <rect width="800" height="600" rx="34" fill="url(#r)"/>
+  <g fill="none" stroke="#ffcb6b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.82"><rect x="305" y="65" width="170" height="440" rx="28"/><path d="M390 90 V500"/><path d="M250 100 C325 180 325 410 250 490"/><path d="M530 100 C455 180 455 410 530 490"/><path d="M180 170 C260 230 260 360 180 425"/><path d="M600 170 C520 230 520 360 600 425"/></g>
+  <g fill="white" font-family="Arial, Helvetica, sans-serif">
+    <text x="54" y="72" font-size="34" font-weight="700">Coaxial Jet Flow</text>
+    <text x="54" y="112" font-size="20" opacity="0.78">RANS / LES Turbulence</text>
+    <text x="54" y="552" font-size="18" opacity="0.58">Replace this placeholder with your project image</text>
+  </g>
+</svg>

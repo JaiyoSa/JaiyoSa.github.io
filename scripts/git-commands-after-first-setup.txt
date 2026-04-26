@@ -1,0 +1,7 @@
+Use these only after Git is installed and your GitHub repository is connected.
+Run them from inside the portfolio folder.
+
+git status
+git add .
+git commit -m "Update portfolio"
+git push

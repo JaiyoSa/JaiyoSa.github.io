@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Droplet Dynamics">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#16213f"/></linearGradient>
+    <radialGradient id="r" cx="0.7" cy="0.25" r="0.8"><stop offset="0" stop-color="#8bb6ff" stop-opacity="0.35"/><stop offset="1" stop-color="#8bb6ff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="600" rx="34" fill="url(#g)"/>
+  <rect width="800" height="600" rx="34" fill="url(#r)"/>
+  <g fill="none" stroke="#8bb6ff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.82"><path d="M210 330 C300 210 300 150 390 80 C480 150 480 210 570 330 C570 450 480 520 390 520 C300 520 210 450 210 330Z"/><path d="M70 250 C210 170 280 170 360 230 C450 300 560 300 720 205"/><path d="M80 365 C240 310 340 315 460 380 C535 420 620 420 725 370"/></g>
+  <g fill="white" font-family="Arial, Helvetica, sans-serif">
+    <text x="54" y="72" font-size="34" font-weight="700">Droplet Dynamics</text>
+    <text x="54" y="112" font-size="20" opacity="0.78">VOF + Coaxial Jets</text>
+    <text x="54" y="552" font-size="18" opacity="0.58">Replace this placeholder with your project image</text>
+  </g>
+</svg>

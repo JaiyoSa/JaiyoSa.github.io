@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Content helper | Sagar Gharti Portfolio</title>
+  <link rel="icon" href="assets/images/profile-placeholder.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="editor">
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html"><span class="brand-mark">SG</span></a>
+    <nav class="nav" id="navMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-btn" id="themeToggle">◐</button>
+      <button class="menu-button" id="menuButton"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="section-pad subhero">
+      <div class="section-label reveal"><span class="section-num">✎</span><span>Content helper</span></div>
+      <h1 class="reveal">Generate blog posts<br>without writing code.</h1>
+      <p class="reveal">Fill the form, download the Markdown file, then place it inside the <code>posts</code> folder. Add the filename to <code>posts/posts.json</code>.</p>
+    </div>
+
+    <section class="section section-pad section-alt" style="padding-top:2rem;">
+      <div class="editor-grid">
+        <form id="postGenerator" class="glass-card editor-card">
+          <div class="card-corner card-corner-tl"></div>
+          <h3>New blog post</h3>
+          <label>
+            Title
+            <input name="title" type="text" placeholder="e.g. CFD Convergence Study Notes" required />
+          </label>
+          <label>
+            Date
+            <input name="date" type="date" />
+          </label>
+          <label>
+            Tags (comma separated)
+            <input name="tags" type="text" placeholder="e.g. CFD, simulation, research" />
+          </label>
+          <label>
+            Excerpt (short summary for the card)
+            <input name="excerpt" type="text" placeholder="A one-line description of this post." />
+          </label>
+          <label>
+            Content (Markdown)
+            <textarea name="content" rows="12" placeholder="# My Post Title&#10;&#10;Write your content here using Markdown...&#10;&#10;## Subheading&#10;&#10;- Bullet point&#10;- Another point"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit" style="margin-top:1rem;">Download .md file</button>
+        </form>
+
+        <div class="glass-card editor-card">
+          <div class="card-corner card-corner-tl"></div>
+          <h3>After downloading</h3>
+          <ol>
+            <li>Move the <code>.md</code> file into the <code>posts/</code> folder</li>
+            <li>Open <code>posts/posts.json</code> in a text editor</li>
+            <li>Add the filename (e.g. <code>"2026-05-01-my-post.md"</code>) to the list</li>
+            <li>Push to GitHub with:<br><code>git add -A && git commit -m "New post" && git push</code></li>
+          </ol>
+
+          <h3 style="margin-top:2rem;">Markdown cheat sheet</h3>
+          <div style="font-family:var(--font-m);font-size:0.82rem;color:var(--text-dim);line-height:2;">
+            <code># Heading 1</code><br>
+            <code>## Heading 2</code><br>
+            <code>**bold text**</code><br>
+            <code>`inline code`</code><br>
+            <code>- bullet item</code><br>
+            <code>[link text](url)</code><br>
+            <code>![image alt](path)</code><br>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy mono">© <span id="year"></span> Sagar Gharti</p>
+      <a class="back-top" href="#top">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

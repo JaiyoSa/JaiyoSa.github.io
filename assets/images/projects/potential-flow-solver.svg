@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Potential Flow Solver">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#16213f"/></linearGradient>
+    <radialGradient id="r" cx="0.7" cy="0.25" r="0.8"><stop offset="0" stop-color="#74d7ff" stop-opacity="0.35"/><stop offset="1" stop-color="#74d7ff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="600" rx="34" fill="url(#g)"/>
+  <rect width="800" height="600" rx="34" fill="url(#r)"/>
+  <g fill="none" stroke="#74d7ff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.82"><path d="M90 300 C240 170 510 170 710 292 C505 330 250 340 90 300Z"/><path d="M100 250 C230 215 520 220 700 284"/><path d="M130 400 C230 330 480 360 660 305"/><path d="M160 180 C300 230 500 220 635 180"/></g>
+  <g fill="white" font-family="Arial, Helvetica, sans-serif">
+    <text x="54" y="72" font-size="34" font-weight="700">Potential Flow Solver</text>
+    <text x="54" y="112" font-size="20" opacity="0.78">Python + Aerodynamics</text>
+    <text x="54" y="552" font-size="18" opacity="0.58">Replace this placeholder with your project image</text>
+  </g>
+</svg>

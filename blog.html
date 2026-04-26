@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sagar Gharti – research notes, simulation insights, and engineering writing." />
+  <title>Blog | Sagar Gharti</title>
+  <link rel="icon" href="assets/images/profile-placeholder.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="blog">
+  <div class="progress-bar" id="progressBar"></div>
+  <canvas class="flow-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="Go to home"><span class="brand-mark">SG</span></a>
+    <nav class="nav" id="navMenu" aria-label="Main navigation">
+      <a href="index.html#about" class="nav-link"><span class="nav-num">01</span>About</a>
+      <a href="index.html#projects" class="nav-link"><span class="nav-num">02</span>Projects</a>
+      <a href="index.html#research" class="nav-link"><span class="nav-num">03</span>Research</a>
+      <a href="index.html#publications" class="nav-link"><span class="nav-num">04</span>Publications</a>
+      <a href="blog.html" class="nav-link active"><span class="nav-num">05</span>Blog</a>
+      <a href="index.html#contact" class="nav-link"><span class="nav-num">06</span>Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="cmd-btn" id="commandOpen" aria-label="Open command palette">⌘K</button>
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+      <button class="menu-button" id="menuButton" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="section-pad subhero">
+      <div class="section-label reveal"><span class="section-num">05</span><span>Blog</span></div>
+      <h1 class="reveal">Research notes &amp; writing</h1>
+      <p class="reveal">Simulation insights, engineering notes, and personal reflections. Updated with Markdown files.</p>
+    </div>
+
+    <section class="section section-pad section-alt">
+      <div class="toolbar reveal">
+        <label class="search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input id="blogSearch" type="search" placeholder="Search posts…" />
+        </label>
+        <div class="filter-chips" id="blogFilters"></div>
+      </div>
+      <div class="blog-grid large reveal" id="blogList"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy mono">© <span id="year"></span> Sagar Gharti</p>
+      <p class="footer-sub">Aerospace Engineering PhD Candidate · ERAU</p>
+      <a class="back-top" href="#top">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <div class="command-palette" id="commandPalette" aria-hidden="true">
+    <div class="command-box">
+      <div class="command-head"><span class="mono">Quick navigation</span><button id="commandClose" aria-label="Close">ESC</button></div>
+      <input id="commandSearch" type="search" placeholder="Type: projects, blog, contact, CV…" autocomplete="off" />
+      <div class="command-results" id="commandResults"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

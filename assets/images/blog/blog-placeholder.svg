@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Blog Image">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#16213f"/></linearGradient>
+    <radialGradient id="r" cx="0.7" cy="0.25" r="0.8"><stop offset="0" stop-color="#d7a3ff" stop-opacity="0.35"/><stop offset="1" stop-color="#d7a3ff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="600" rx="34" fill="url(#g)"/>
+  <rect width="800" height="600" rx="34" fill="url(#r)"/>
+  <g fill="none" stroke="#d7a3ff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.82"><path d="M90 380 H230 L290 210 L370 450 L455 170 L530 380 H710"/><rect x="110" y="105" width="170" height="90" rx="18"/><rect x="500" y="105" width="170" height="90" rx="18"/><path d="M280 150 H500"/><path d="M390 150 V280"/><circle cx="390" cy="280" r="45"/></g>
+  <g fill="white" font-family="Arial, Helvetica, sans-serif">
+    <text x="54" y="72" font-size="34" font-weight="700">Blog Image</text>
+    <text x="54" y="112" font-size="20" opacity="0.78">Add your cover image here</text>
+    <text x="54" y="552" font-size="18" opacity="0.58">Replace this placeholder with your project image</text>
+  </g>
+</svg>
